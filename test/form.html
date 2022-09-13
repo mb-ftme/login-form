@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Classic Login Form Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="./form.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class='login' id='login'>
+  <div class='head'>
+  <h1 class='company'>ارسال پیامک</h1>
+  </div>
+ 
+  <div class='form'>
+    <form routerLink="form" [formGroup]="form">
+  <input name="userName" formControlName="userName" type="text" placeholder='متن پیام' class='text' id='username' required><br>
+  <input name="password" formControlName="password" type="password" placeholder=' کد ملی' class='password'><br>
+  <a href="#" class='btn-login' id='do-login' (click)="login()">ارسال</a>
+  <!-- <a href="#" class='forgot'>Forgot?</a> -->
+    </form>
+  </div>
+</section>
+<footer>
+  <!-- <p>Made with <span class='heart'>&hearts;</span> by Bridges(<a href='https://github.com/pxntxs'>@pxntxs</a>)</p>
+  <p>Gradient: <a href='https://uigradients.com/#Turquoiseflow'>https://uigradients.com/#Turquoiseflow</a></p> -->
+</footer>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
